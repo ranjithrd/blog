@@ -8,54 +8,59 @@ title: Home
 {% assign art = site.static_files | where: "image", true %}
 {% assign posts = site.posts %}
 {% assign first = site.posts.first %}
+{% assign second = site.posts[1] %}
+{% assign third = site.posts[2] %}
 
-<h3 class="subtitle sans tx-blacker" style="padding-left: 1rem;color:rgb(53, 53, 53);font-weight: lighter;">BLOG</h3>
+<h5 class="subtitle sans tx-blacker" style="padding-left: 1rem;color:rgb(53, 53, 53);font-weight: lighter;">BLOG</h5>
 <div class="tile is-ancestor">
   
     <div class="tile is-parent"><a href="{{ first.url }}" style="color: inherit;text-decoration: none;"></a>
-      <article class="tile is-child container shadow bg-lightest rende pad">
-        <h1 class="title is-spaced">
+      <article class="tile is-child container shadow bg-lighte rende pad">
+        <h1>
           {{ first.title }}
         </h1>
-        <h4>
+        <h5 class="caps bold">
           {{ first.dated }}
-        </h4>
+        </h5>
         <p class="subtitle">
-          The last days of the Chinese extradition bill have arrived, with it being ended
-            on the 27th of this month. The protests have now taken a new turn: democracy. The complete removal of any and all involvement
-            of the Chinese government in the New York of Asia.
+          {{ first.excerpt }}
         </p>
       </article></a>
     </div>
   
     <div class="tile is-parent is-vertical">
-      <article class="tile is-child container shadow rende pad shadow">
-        <h2 class="title is-spaced">A New Day</h2>
-        <p class="subtitle">The last days of the Chinese extradition bill have arrived, with it being ended
-            on the 27th of this month. The protests have now taken a new turn: democracy. The complete removal of any and all involvement
-            of the Chinese government in the New York of Asia.</p>
+      <article class="tile is-child container shadow rende pad shadow" style="padding-top: 1em;">
+        <h2 class="title is-spaced">
+          {{ second.title }}
+        </h2>
+        <h5 class="caps bold">
+          {{ second.dated }}
+        </h5>
+        <p>
+          {{ second.excerpt}}
+        </p>
       </article>
-      <article class="tile is-child rende container pad shadow">
-        <h2 class="title is-spaced">Deepavali</h2>
-        <p class="subtitle">The last days of the Chinese extradition bill have arrived, with it being ended
-            on the 27th of this month. The protests have now taken a new turn: democracy. The complete removal of any and all involvement
-            of the Chinese government in the New York of Asia.</p>
+      <article class="tile is-child rende container pad shadow" style="padding-top: 1em;">
+        <h2 class="title is-spaced">
+          {{ third.title }}
+        </h2>
+        <h5 class="caps bold">
+          {{ third.dated }}
+        </h5>
+        <p>
+          {{ third.excerpt}}
+        </p>
       </article>
     </div>
 </div>
 
-<h3 class="subtitle sans tx-blacker" style="padding-left: 1rem;color:rgb(53, 53, 53);font-weight: lighter;">ART</h3>
-<div class="tile is-ancestor row">
-    <div class="tile is-parent column">
-        <article class="tile is-child container rende shadow text-center">
-          <h1 class="title is-spaced" style="padding-top: 1.5rem;">Lord Rama</h1>
-              <img src="{{ art[13].path }}" alt="lord rama" class="rended">
-        </article>
-      </div>
-      <div class="tile is-parent">
-        <article class="tile is-child pad rende container bg-lightest shadow text-center" style="padding: top 0.5rem;" id="showModal2">
-          <h1 class="title is-spaced">ABD</h1>
-              <img src="{{ art[0].path }}" alt="ab de villiers" class="rended">
-        </article>
-      </div>
+<div class="row">
+  <div class="col col-md-4">
+    <article>
+      <h1>Lessonity</h1>
+      <p>
+        Make and take great lessons.
+      </p>
+    </article>
   </div>
+</div>

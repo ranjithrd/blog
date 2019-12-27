@@ -3,31 +3,39 @@
 
 @import "tiles";
 
-$font-header: 'Source Serif Pro', georgia, serif;
-$font-body: 'DM Sans', 'Circular', 'Apercu', 'Avenir', 'Poppins', sans-serif;
+$font-header:  futura-pt, georgia, serif;
+$font-body: kepler-std, 'Apercu', 'Avenir', 'Poppins', sans-serif;
 $font-sub: $font-body;
 
-$lightest: #b3e5fc;
-$light: #4fc3f7;
-$primary: #03a9f4;
-$dark: #0288d1;
-$darkest: #01579b;
+$lightest: #89a8ff;
+$light: #7196ff;
+$primary: #4273ff;
+$dark: #3256bf;
+$darkest: #29489f;
 
 $blacker: #1a1a1a;
 $whiter: #efefef;
 
-h1, h2, h3, h4, h5, .title {
+h1, h2, h3, h4, h5, h6, .title {
     font-family: $font-header;
-    font-weight: bold;
-}
-h3, h4, h5 {
-    font-family: $font-sub;
+    font-weight: 500;
+    letter-spacing: auto;
 }
 body {
     font-family: $font-body;
     color: black;
 }
 
+p{
+    font-size: 1.2rem;
+}
+
+.caps {
+    text-transform: uppercase;
+}
+.bold {
+    font-weight: bold;
+}
 .serif {
     font-family: $font-header;
 }
@@ -127,70 +135,74 @@ body {
     top: 0;
   }
 
-h1 {
-    display: block;
-    font-size: 2em;
-    font-weight: bold;
-    margin-block-start: .67em;
-    margin-block-end: .67em;
+  h4, h5, h6 {
+      font-weight: 400;
   }
+
+// h1 {
+//     display: block;
+//     font-size: 2em;
+//     font-weight: bold;
+//     margin-block-start: .67em;
+//     margin-block-end: .67em;
+//   }
   
-  h2,
-  :-moz-any(article, aside, nav, section)
-  h1 {
-    display: block;
-    font-size: 1.5em;
-    font-weight: bold;
-    margin-block-start: .83em;
-    margin-block-end: .83em;
-  }
+//   h2,
+//   :-moz-any(article, aside, nav, section)
+//   h1 {
+//     display: block;
+//     font-size: 1.5em;
+//     font-weight: bold;
+//     margin-block-start: .83em;
+//     margin-block-end: .83em;
+//   }
   
-  h3,
-  :-moz-any(article, aside, nav, section)
-  :-moz-any(article, aside, nav, section)
-  h1 {
-    display: block;
-    font-size: 1.17em;
-    font-weight: bold;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-  }
+//   h3,
+//   :-moz-any(article, aside, nav, section)
+//   :-moz-any(article, aside, nav, section)
+//   h1 {
+//     display: block;
+//     font-size: 1.17em;
+//     font-weight: bold;
+//     margin-block-start: 1em;
+//     margin-block-end: 1em;
+//   }
   
-  h4,
-  :-moz-any(article, aside, nav, section)
-  :-moz-any(article, aside, nav, section)
-  :-moz-any(article, aside, nav, section)
-  h1 {
-    display: block;
-    font-size: 1.00em;
-    font-weight: bold;
-    margin-block-start: 1.33em;
-    margin-block-end: 1.33em;
-  }
+//   h4,
+//   :-moz-any(article, aside, nav, section)
+//   :-moz-any(article, aside, nav, section)
+//   :-moz-any(article, aside, nav, section)
+//   h1 {
+//     display: block;
+//     font-size: 1.00em;
+//     font-weight: bold;
+//     margin-block-start: 1.33em;
+//     margin-block-end: 1.33em;
+//   }
   
-  h5,
-  :-moz-any(article, aside, nav, section)
-  :-moz-any(article, aside, nav, section)
-  :-moz-any(article, aside, nav, section)
-  :-moz-any(article, aside, nav, section)
-  h1 {
-    display: block;
-    font-size: 0.83em;
-    font-weight: bold;
-    margin-block-start: 1.67em;
-    margin-block-end: 1.67em;
-  }
+//   h5,
+//   :-moz-any(article, aside, nav, section)
+//   :-moz-any(article, aside, nav, section)
+//   :-moz-any(article, aside, nav, section)
+//   :-moz-any(article, aside, nav, section)
+//   h1 {
+//     display: block;
+//     font-size: 0.83em;
+//     font-weight: bold;
+//     margin-block-start: 1.67em;
+//     margin-block-end: 1.67em;
+//   }
   
-  h6,
-  :-moz-any(article, aside, nav, section)
-  :-moz-any(article, aside, nav, section)
-  :-moz-any(article, aside, nav, section)
-  :-moz-any(article, aside, nav, section)
-  :-moz-any(article, aside, nav, section)
-  h1 {
-    display: block;
-    font-size: 0.67em;
-    font-weight: bold;
-    margin-block-start: 2.33em;
-    margin-block-end: 2.33em;
-  }
+//   h6,
+//   :-moz-any(article, aside, nav, section)
+//   :-moz-any(article, aside, nav, section)
+//   :-moz-any(article, aside, nav, section)
+//   :-moz-any(article, aside, nav, section)
+//   :-moz-any(article, aside, nav, section)
+//   h1 {
+//     display: block;
+//     font-size: 0.67em;
+//     font-weight: bold;
+//     margin-block-start: 2.33em;
+//     margin-block-end: 2.33em;
+//   }
