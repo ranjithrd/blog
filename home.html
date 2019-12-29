@@ -11,11 +11,11 @@ title: Home
 {% assign second = site.posts[1] %}
 {% assign third = site.posts[2] %}
 
-<h5 class="subtitle sans tx-blacker" style="padding-left: 1rem;color:rgb(53, 53, 53);font-weight: lighter;">BLOG</h5>
+<h5 class="subtitle serif tx-blacker" style="padding-left: 1rem;color:rgb(53, 53, 53);font-weight: bold;">blog</h5>
 <div class="tile is-ancestor">
   
     <div class="tile is-parent"><a href="{{ first.url }}" style="color: inherit;text-decoration: none;"></a>
-      <article class="tile is-child container shadow bg-lighte rende pad">
+      <article class="tile is-child container shadow bg-lightest rende pad fore">
         <h1>
           {{ first.title }}
         </h1>
@@ -25,11 +25,14 @@ title: Home
         <p class="subtitle">
           {{ first.excerpt }}
         </p>
+        <button class=" btn rounded-pill btn-block bg-blacker tx-primary align-bottom">
+          <h5>read this article</h5>
+        </button>
       </article></a>
     </div>
   
     <div class="tile is-parent is-vertical">
-      <article class="tile is-child container shadow rende pad shadow" style="padding-top: 1em;">
+      <article class="tile is-child container shadow rende pad shadow fore" style="padding-top: 1em;">
         <h2 class="title is-spaced">
           {{ second.title }}
         </h2>
@@ -39,8 +42,11 @@ title: Home
         <p>
           {{ second.excerpt}}
         </p>
+        <button class="btn btn-primary">
+          <h4>read this article</h4>
+        </button>
       </article>
-      <article class="tile is-child rende container pad shadow" style="padding-top: 1em;">
+      <article class="tile is-child rende container pad shadow fore" style="padding-top: 1em;">
         <h2 class="title is-spaced">
           {{ third.title }}
         </h2>
@@ -54,8 +60,9 @@ title: Home
     </div>
 </div>
 
-<div class="row">
-  <div class="col col-md-4">
+<h5 class="subtitle serif tx-blacker" style="padding-left: 1rem;color:rgb(53, 53, 53);font-weight: bold;">work</h5>
+<div class="row" style="padding: 1em;">
+  <div class="col col-md-4 pad rende shadow">
     <article>
       <h1>Lessonity</h1>
       <p>

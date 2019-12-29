@@ -3,27 +3,29 @@
 
 @import "tiles";
 
-$font-header:  futura-pt, georgia, serif;
-$font-body: kepler-std, 'Apercu', 'Avenir', 'Poppins', sans-serif;
-$font-sub: $font-body;
+$font-header:  neuzeit-grotesk, georgia, serif;
+$font-body: adobe-caslon-pro, 'Apercu', 'Avenir', 'Poppins', sans-serif;
+$font-sub: $font-header;
 
-$lightest: #89a8ff;
+$lightest: #62aeff;
 $light: #7196ff;
-$primary: #4273ff;
-$dark: #3256bf;
-$darkest: #29489f;
+$primary: #007bff;
+$dark: #0068d8;
+$darkest: #005fc4;
 
-$blacker: #1a1a1a;
-$whiter: #efefef;
+$blacker: #111111;
+$whiter: #f5f5f5;
+$forer: #111111;
+$bluer: #89c2ff;
 
 h1, h2, h3, h4, h5, h6, .title {
     font-family: $font-header;
-    font-weight: 500;
-    letter-spacing: auto;
+    font-weight: bold;
 }
 body {
     font-family: $font-body;
     color: black;
+    background-color: blacker;
 }
 
 p{
@@ -51,6 +53,16 @@ p{
 }
 #content {
     padding:1rem;
+    background-color: $blacker;
+    color: $whiter;
+
+    .fore {
+        background-color: $forer;
+        color: white;
+        h1, h2, h3, .title {
+            color: $bluer;
+        }
+    }
 }
 
 // bg
@@ -104,105 +116,3 @@ p{
 .pad {
     padding: 0.5em;
 }
-
-/* Style the navigation menu */
-.topnav {
-    overflow: hidden;
-    background-color: #333;
-    position: relative;
-  }
-  
-  /* Hide the links inside the navigation menu (except for logo/home) */
-  .topnav #myLinks {
-    display: none;
-  }
-  
-  /* Style navigation menu links */
-  .topnav a {
-    color: white;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-    display: block;
-  }
-  
-  /* Style the hamburger menu */
-  .topnav a.icon {
-    background: black;
-    display: block;
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-
-  h4, h5, h6 {
-      font-weight: 400;
-  }
-
-// h1 {
-//     display: block;
-//     font-size: 2em;
-//     font-weight: bold;
-//     margin-block-start: .67em;
-//     margin-block-end: .67em;
-//   }
-  
-//   h2,
-//   :-moz-any(article, aside, nav, section)
-//   h1 {
-//     display: block;
-//     font-size: 1.5em;
-//     font-weight: bold;
-//     margin-block-start: .83em;
-//     margin-block-end: .83em;
-//   }
-  
-//   h3,
-//   :-moz-any(article, aside, nav, section)
-//   :-moz-any(article, aside, nav, section)
-//   h1 {
-//     display: block;
-//     font-size: 1.17em;
-//     font-weight: bold;
-//     margin-block-start: 1em;
-//     margin-block-end: 1em;
-//   }
-  
-//   h4,
-//   :-moz-any(article, aside, nav, section)
-//   :-moz-any(article, aside, nav, section)
-//   :-moz-any(article, aside, nav, section)
-//   h1 {
-//     display: block;
-//     font-size: 1.00em;
-//     font-weight: bold;
-//     margin-block-start: 1.33em;
-//     margin-block-end: 1.33em;
-//   }
-  
-//   h5,
-//   :-moz-any(article, aside, nav, section)
-//   :-moz-any(article, aside, nav, section)
-//   :-moz-any(article, aside, nav, section)
-//   :-moz-any(article, aside, nav, section)
-//   h1 {
-//     display: block;
-//     font-size: 0.83em;
-//     font-weight: bold;
-//     margin-block-start: 1.67em;
-//     margin-block-end: 1.67em;
-//   }
-  
-//   h6,
-//   :-moz-any(article, aside, nav, section)
-//   :-moz-any(article, aside, nav, section)
-//   :-moz-any(article, aside, nav, section)
-//   :-moz-any(article, aside, nav, section)
-//   :-moz-any(article, aside, nav, section)
-//   h1 {
-//     display: block;
-//     font-size: 0.67em;
-//     font-weight: bold;
-//     margin-block-start: 2.33em;
-//     margin-block-end: 2.33em;
-//   }
