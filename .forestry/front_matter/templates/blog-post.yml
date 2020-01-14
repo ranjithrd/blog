@@ -11,6 +11,3 @@ fields:
 - type: text
   name: layout
   label: layout
-- type: text
-  name: excerpt_seperator
-  label: excerpt_seperator
