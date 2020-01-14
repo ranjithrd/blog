@@ -3,9 +3,10 @@
 
 @import "tiles";
 
-$font-header:  neuzeit-grotesk, georgia, serif;
-$font-body: adobe-caslon-pro, 'Apercu', 'Avenir', 'Poppins', sans-serif;
-$font-sub: $font-header;
+// $font-header:  neuzeit-grotesk, georgia, serif;
+$font-body: kepler-std, 'Apercu', 'Avenir', 'Poppins', sans-serif;
+$font-sub: futura-pt, 'Futura PT', 'Futura', 'Helvetica', sans-serif;
+$font-header: $font-sub;
 
 $lightest: #62aeff;
 $light: #7196ff;
@@ -25,7 +26,11 @@ h1, h2, h3, h4, h5, h6, .title {
 body {
     font-family: $font-body;
     color: black;
-    background-color: blacker;
+    background-color: white;
+}
+
+.button {
+    text-transform: uppercase;
 }
 
 p{
@@ -50,19 +55,20 @@ p{
 
 #header {
     box-shadow: 0px 10px 15px #888888;
+    background-color: white;
 }
-#content {
+.content {
     padding:1rem;
-    background-color: $blacker;
-    color: $whiter;
+    background-color: white;
+    // color: $whiter;
 
-    .fore {
-        background-color: $forer;
-        color: white;
-        h1, h2, h3, .title {
-            color: $bluer;
-        }
-    }
+    // .fore {
+    //     background-color: $forer;
+    //     color: white;
+    //     h1, h2, h3, .title {
+    //         color: $bluer;
+    //     }
+    // }
 }
 
 // bg
@@ -72,7 +78,7 @@ p{
 .bg-lighte {
     background-color: $light;
 }
-.bg-primary {
+.bg-primarya {
     background-color: $primary;
 }
 .bg-darke {
@@ -95,7 +101,7 @@ p{
 .tx-lighte {
     color: $light;
 }
-.tx-primary {
+.tx-primarya {
     color: $primary;
 }
 .tx-darke {
@@ -115,4 +121,8 @@ p{
 }
 .pad {
     padding: 0.5em;
+}
+
+.btn-b {
+    padding-top: 0.6em;
 }

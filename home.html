@@ -11,63 +11,106 @@ title: Home
 {% assign second = site.posts[1] %}
 {% assign third = site.posts[2] %}
 
-<h5 class="subtitle serif tx-blacker" style="padding-left: 1rem;color:rgb(53, 53, 53);font-weight: bold;">blog</h5>
+<h4 class="subtitle serif tx-blacker" style="padding-left: 1rem;color:rgb(53, 53, 53);font-weight: bold;">blog</h4>
 <div class="tile is-ancestor">
   
-    <div class="tile is-parent"><a href="{{ first.url }}" style="color: inherit;text-decoration: none;"></a>
-      <article class="tile is-child container shadow bg-lightest rende pad fore">
+    <div class="tile is-parent"><a href="{{ first.url }}" style="color: inherit;text-decoration: none;">
+      <article class="tile is-child container shadow bg-lightest rende pad fore" style="padding:2em;height:100%;position:relative;">
         <h1>
           {{ first.title }}
         </h1>
-        <h5 class="caps bold">
+        <h5 class="bold">
           {{ first.dated }}
         </h5>
         <p class="subtitle">
           {{ first.excerpt }}
         </p>
-        <button class=" btn rounded-pill btn-block bg-blacker tx-primary align-bottom">
-          <h5>read this article</h5>
+        <button class=" btn rounded-pill btn-block btn-b btn-light shadow align-bottom" style="margin:1em;">
+          <h5>READ MORE</h5>
         </button>
-      </article></a>
-    </div>
+      </article>
+    </a></div>
   
     <div class="tile is-parent is-vertical">
-      <article class="tile is-child container shadow rende pad shadow fore" style="padding-top: 1em;">
+      <article class="tile is-child container shadow rende pad shadow fore" style="padding-top: 1em;padding:2em;">
+        <a href="{{ second.url }}" style="color: inherit;text-decoration: none;">
         <h2 class="title is-spaced">
           {{ second.title }}
         </h2>
-        <h5 class="caps bold">
+        <h5 class="bold">
           {{ second.dated }}
         </h5>
         <p>
           {{ second.excerpt}}
         </p>
-        <button class="btn btn-primary">
-          <h4>read this article</h4>
-        </button>
-      </article>
-      <article class="tile is-child rende container pad shadow fore" style="padding-top: 1em;">
+        <div style="width: 100%; text-align:center;padding:0.75em;">
+          <button class="btn rounded-pill btn-primary shadow btn-b" style="padding-left: 1.5em;padding-right: 1.5em;">
+            <h5>READ MORE</h5>
+          </button>
+        </div>
+      </a></article>
+      <article class="tile is-child container shadow rende pad shadow fore" style="padding-top: 1em;padding:2em;">
+        <a href="{{ third.url }}" style="color: inherit;text-decoration: none;">
         <h2 class="title is-spaced">
           {{ third.title }}
         </h2>
-        <h5 class="caps bold">
+        <h5 class="bold">
           {{ third.dated }}
         </h5>
         <p>
           {{ third.excerpt}}
         </p>
-      </article>
+        <div style="width: 100%; text-align:center;padding:0.75em;">
+          <button class="btn rounded-pill btn-primary shadow btn-b" style="padding-left: 1.5em;padding-right: 1.5em;">
+            <h5>READ MORE</h5>
+          </button>
+        </div>
+      </a></article>
     </div>
 </div>
 
-<h5 class="subtitle serif tx-blacker" style="padding-left: 1rem;color:rgb(53, 53, 53);font-weight: bold;">work</h5>
-<div class="row" style="padding: 1em;">
-  <div class="col col-md-4 pad rende shadow">
-    <article>
+<!-- <h4 class="subtitle serif tx-blacker" style="padding-left: 1rem;color:rgb(53, 53, 53);font-weight: bold;">work</h4> -->
+<!-- <h5 style="padding-left: 1em;font-weight: 400;">a few apps I made.</h5> -->
+<!-- <div class="row" style="padding: 1em;">
+
+
+  <div class="col col-md-4 pad" style="padding:1em;">
+    <article class="pad rende shadow" style="padding:2em;">
       <h1>Lessonity</h1>
       <p>
-        Make and take great lessons.
+        Make and take great lessons. Available on the App Store.
       </p>
+      <button class="btn rounded-pill btn-primary btn-b" style="padding-left: 1.5em;padding-right: 1.5em;padding-bottom: 0.65em;;">
+        <a href="bit.do/lessonity" style="text-decoration: none;color:inherit;font-weight: bold;" class="h5 serif">APP STORE</a>
+      </button>
     </article>
   </div>
+
+
+  <div class="col col-md-4 pad" style="padding:1em;">
+    <article class="pad rende shadow" style="padding:2em;">
+      <h1>Surveyer</h1>
+      <p>
+        Surveys, now easier than ever. Available on the App Store.
+      </p>
+      <button class="btn rounded-pill btn-primary btn-b" style="padding-left: 1.5em;padding-right: 1.5em;padding-bottom: 0.65em;;">
+        <a href="bit.do/surveyer" style="text-decoration: none;color:inherit;font-weight: bold;" class="h5 serif">APP STORE</a>
+      </button>
+    </article>
+  </div>
+
+
+  <div class="col col-md-4 pad" style="padding:1em;">
+    <article class="pad rende shadow" style="padding:2em;">
+      <h1>Codetome</h1>
+      <p>
+        Code snippets, now easier. Available on the App Store.
+      </p>
+      <button class="btn rounded-pill btn-primary btn-b" style="padding-left: 1.5em;padding-right: 1.5em;padding-bottom: 0.65em;;">
+        <a href="bit.do/codetome" style="text-decoration: none;color:inherit;font-weight: bold;" class="h5 serif">APP STORE</a>
+      </button>
+    </article>
+  </div> -->
+
+
 </div>
