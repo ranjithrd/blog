@@ -8,19 +8,41 @@ permalink: /blog/
 {% assign first = site.posts.first %}
 {% assign second = site.posts[1] %}
 {% assign third = site.posts[2] %}
+
 <a href="{{ first.url }}" style="color: inherit;text-decoration: none;">
-    <article class="container container-fluid shadow bg-lightest rende pad fore" style="padding:2em;height:100%;position:relative;">
-      <h1>
-        {{ first.title }}
-      </h1>
-      <h5 class="bold">
-        {{ first.dated }}
-      </h5>
-      <p class="subtitle">
-        {{ first.excerpt }}
-      </p>
-      <button class=" btn rounded-pill btn-block btn-b btn-light shadow align-bottom" style="margin:1em;">
-        <h5>READ MORE</h5>
-      </button>
-    </article>
+    <div class="container-fluid shadow bg-lightest pad rende" style="padding-bottom: 2em;">
+        <h1>
+            {{ first.title }}
+        </h1>
+        <h5 class="bold">
+            {{ first.dated }}
+        </h5>
+        <p class="subtitle">
+            {{ first.excerpt }}
+        </p>
+        <button class=" btn rounded-pill btn-block btn-b btn-light shadow align-bottom">
+            <h5>READ MORE</h5>
+        </button>
+    </div>
 </a>
+<div class="container row" style="text-align:center;margin:2em;">
+    {% for post in site.posts %}
+        <div class="card col-md-5" style="margin: 1em;">
+            <div class="card-body">
+                <h2>
+                    {{ post.title }}
+                </h2>
+                <p>
+                    {{ post.excerpt }}
+                </p>
+                <button class="btn btn-outline-primary rounded-pill btn-b">
+                    <h5>
+                        <a href="{{ post.url }}" style="text-decoration: none;color: inherit;font-weight: 700;">
+                            READ MORE
+                        </a>
+                    </h5>
+                </button>
+            </div>
+        </div>
+    {% endfor %}
+</div>

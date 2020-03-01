@@ -10,9 +10,10 @@ title: Home
 {% assign first = site.posts.first %}
 {% assign second = site.posts[1] %}
 {% assign third = site.posts[2] %}
+{% assign fourth = site.posts[3] %}
 
 <h4 class="subtitle serif tx-blacker" style="padding-left: 1rem;color:rgb(53, 53, 53);font-weight: bold;">blog</h4>
-<div class="tile is-ancestor">
+<!-- <div class="tile is-ancestor">
   
     <div class="tile is-parent"><a href="{{ first.url }}" style="color: inherit;text-decoration: none;">
       <article class="tile is-child container shadow bg-lightest rende pad fore" style="padding:2em;height:100%;position:relative;">
@@ -25,9 +26,11 @@ title: Home
         <p class="subtitle">
           {{ first.excerpt }}
         </p>
-        <button class=" btn rounded-pill btn-block btn-b btn-light shadow align-bottom" style="margin:1em;">
-          <h5>READ MORE</h5>
-        </button>
+        <div class="card-footer bg-lightest">
+          <button class=" btn rounded-pill btn-block btn-b btn-light shadow align-bottom">
+            <h5>READ MORE</h5>
+          </button>
+        </div>
       </article>
     </a></div>
   
@@ -49,6 +52,7 @@ title: Home
           </button>
         </div>
       </a></article>
+      <div class="row">
       <article class="tile is-child container shadow rende pad shadow fore" style="padding-top: 1em;padding:2em;">
         <a href="{{ third.url }}" style="color: inherit;text-decoration: none;">
         <h2 class="title is-spaced">
@@ -66,8 +70,102 @@ title: Home
           </button>
         </div>
       </a></article>
+      <article class="tile is-child container shadow rende pad shadow fore" style="padding-top: 1em;padding:2em;">
+        <a href="{{ third.url }}" style="color: inherit;text-decoration: none;">
+        <h2 class="title is-spaced">
+          {{ fourth.title }}
+        </h2>
+        <h5 class="bold">
+          {{ fourth.dated }}
+        </h5>
+        <p>
+          {{ fourth.excerpt}}
+        </p>
+        <div style="width: 100%; text-align:center;padding:0.75em;">
+          <button class="btn rounded-pill btn-primary shadow btn-b" style="padding-left: 1.5em;padding-right: 1.5em;">
+            <h5>READ MORE</h5>
+          </button>
+        </div>
+      </a></article>
     </div>
+    </div>
+</div> -->
+
+<div class="h-10">
+  <div class="row justify-content-center">
+    <article class="col-md is-child bg-lightest container shadow rende pad shadow fore mar" style="padding-top: 1em;padding:2em;">
+      <a href="{{ third.url }}" style="color: inherit;text-decoration: none;">
+      <h2 class="title is-spaced">
+        {{ first.title }}
+      </h2>
+      <h5 class="bold">
+        {{ first.dated }}
+      </h5>
+      <p>
+        {{ first.excerpt}}
+      </p>
+      <div style="width: 100%; text-align:center;padding:0.75em;">
+        <button class="btn rounded-pill btn-light shadow btn-b" style="padding-left: 1.5em;padding-right: 1.5em;">
+          <h5>READ MORE</h5>
+        </button>
+      </div>
+    </a></article>
+    <article class="col-md is-child container shadow rende pad shadow fore mar" style="padding-top: 1em;padding:2em;">
+      <a href="{{ third.url }}" style="color: inherit;text-decoration: none;">
+      <h2 class="title is-spaced">
+        {{ second.title }}
+      </h2>
+      <h5 class="bold">
+        {{ second.dated }}
+      </h5>
+      <p>
+        {{ second.excerpt}}
+      </p>
+      <div style="width: 100%; text-align:center;padding:0.75em;">
+        <button class="btn rounded-pill btn-primary shadow btn-b" style="padding-left: 1.5em;padding-right: 1.5em;">
+          <h5>READ MORE</h5>
+        </button>
+      </div>
+    </a></article>
+  </div>
+  <div class="row justify-content-center">
+    <article class="col-md is-child container shadow rende pad shadow fore mar" style="padding-top: 1em;padding:2em;">
+      <a href="{{ third.url }}" style="color: inherit;text-decoration: none;">
+      <h2 class="title is-spaced">
+        {{ third.title }}
+      </h2>
+      <h5 class="bold">
+        {{ third.dated }}
+      </h5>
+      <p>
+        {{ third.excerpt}}
+      </p>
+      <div style="width: 100%; text-align:center;padding:0.75em;">
+        <button class="btn rounded-pill btn-primary shadow btn-b" style="padding-left: 1.5em;padding-right: 1.5em;">
+          <h5>READ MORE</h5>
+        </button>
+      </div>
+    </a></article>
+    <article class="col-md is-child container shadow rende pad shadow fore mar" style="padding-top: 1em;padding:2em;">
+      <a href="{{ third.url }}" style="color: inherit;text-decoration: none;">
+      <h2 class="title is-spaced">
+        {{ fourth.title }}
+      </h2>
+      <h5 class="bold">
+        {{ fourth.dated }}
+      </h5>
+      <p>
+        {{ fourth.excerpt}}
+      </p>
+      <div style="width: 100%; text-align:center;padding:0.75em;">
+        <button class="btn rounded-pill btn-primary shadow btn-b" style="padding-left: 1.5em;padding-right: 1.5em;">
+          <h5>READ MORE</h5>
+        </button>
+      </div>
+    </a></article>
+  </div>
 </div>
+
 
 <!-- <h4 class="subtitle serif tx-blacker" style="padding-left: 1rem;color:rgb(53, 53, 53);font-weight: bold;">work</h4> -->
 <!-- <h5 style="padding-left: 1em;font-weight: 400;">a few apps I made.</h5> -->
