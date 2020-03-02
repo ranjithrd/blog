@@ -3,46 +3,49 @@ layout: default
 title: Blog
 permalink: /blog/
 ---
-{% assign art = site.static_files | where: "image", true %}
-{% assign posts = site.posts %}
-{% assign first = site.posts.first %}
-{% assign second = site.posts[1] %}
-{% assign third = site.posts[2] %}
 
-<a href="{{ first.url }}" style="color: inherit;text-decoration: none;">
-    <div class="container-fluid shadow bg-lightest pad rende" style="padding-bottom: 2em;">
-        <h1>
-            {{ first.title }}
-        </h1>
+{% assign first = site.posts.first %}
+
+
+
+    <div class="row justify-content-center">
+      <article class="col-md-11 is-child bg-primarya tx-white container shadow rende pad shadow fore mar" style="padding-top: 1em;padding:2em;">
+        <a href="{{ first.url }}" style="color: inherit;text-decoration: none;">
+        <h2 class="title is-spaced">
+          {{ first.title }}
+        </h2>
         <h5 class="bold">
-            {{ first.dated }}
+          {{ first.dated }}
         </h5>
-        <p class="subtitle">
-            {{ first.excerpt }}
+        <p>
+          {{ first.excerpt}}
         </p>
-        <button class=" btn rounded-pill btn-block btn-b btn-light shadow align-bottom">
-            <h5>READ MORE</h5>
+        <div style="width: 100%; text-align:center;padding:0.75em;">
+          <button class="btn rounded-pill btn-light shadow btn-b" style="padding-left: 1.5em;padding-right: 1.5em;">
+            <h6>READ MORE</h6>
         </button>
-    </div>
-</a>
-<div class="container row" style="text-align:center;margin:2em;">
-    {% for post in site.posts %}
-        <div class="card col-md-5" style="margin: 1em;">
-            <div class="card-body">
-                <h2>
-                    {{ post.title }}
-                </h2>
-                <p>
-                    {{ post.excerpt }}
-                </p>
-                <button class="btn btn-outline-primary rounded-pill btn-b">
-                    <h5>
-                        <a href="{{ post.url }}" style="text-decoration: none;color: inherit;font-weight: 700;">
-                            READ MORE
-                        </a>
-                    </h5>
-                </button>
-            </div>
         </div>
+      </a></article>
+    </div>
+
+  <div class="pad row justify-content-center">
+    {% for post in site.posts offset: 1 %}
+    <article class="col-md-5 is-child container shadow rende pad shadow fore mar" style="padding-top: 1em;padding:2em;">
+        <a href="{{ post.url }}" style="color: inherit;text-decoration: none;">
+        <h2 class="title is-spaced">
+          {{ post.title }}
+        </h2>
+        <h5 class="bold">
+          {{ post.dated }}
+        </h5>
+        <p>
+          {{ post.excerpt}}
+        </p>
+        <div style="width: 100%; text-align:center;padding:0.75em;">
+          <button class="btn rounded-pill btn-light shadow btn-b" style="padding-left: 1.5em;padding-right: 1.5em;">
+            <h6>READ MORE</h6>
+        </button>
+        </div>
+      </a></article>
     {% endfor %}
-</div>
+  </div>

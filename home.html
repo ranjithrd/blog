@@ -4,97 +4,15 @@ permalink: /home/
 title: Home
 ---
 
-
-{% assign art = site.static_files | where: "image", true %}
-{% assign posts = site.posts %}
 {% assign first = site.posts.first %}
 {% assign second = site.posts[1] %}
-{% assign third = site.posts[2] %}
-{% assign fourth = site.posts[3] %}
 
 <h4 class="subtitle serif tx-blacker" style="padding-left: 1rem;color:rgb(53, 53, 53);font-weight: bold;">blog</h4>
-<!-- <div class="tile is-ancestor">
-  
-    <div class="tile is-parent"><a href="{{ first.url }}" style="color: inherit;text-decoration: none;">
-      <article class="tile is-child container shadow bg-lightest rende pad fore" style="padding:2em;height:100%;position:relative;">
-        <h1>
-          {{ first.title }}
-        </h1>
-        <h5 class="bold">
-          {{ first.dated }}
-        </h5>
-        <p class="subtitle">
-          {{ first.excerpt }}
-        </p>
-        <div class="card-footer bg-lightest">
-          <button class=" btn rounded-pill btn-block btn-b btn-light shadow align-bottom">
-            <h5>READ MORE</h5>
-          </button>
-        </div>
-      </article>
-    </a></div>
-  
-    <div class="tile is-parent is-vertical">
-      <article class="tile is-child container shadow rende pad shadow fore" style="padding-top: 1em;padding:2em;">
-        <a href="{{ second.url }}" style="color: inherit;text-decoration: none;">
-        <h2 class="title is-spaced">
-          {{ second.title }}
-        </h2>
-        <h5 class="bold">
-          {{ second.dated }}
-        </h5>
-        <p>
-          {{ second.excerpt}}
-        </p>
-        <div style="width: 100%; text-align:center;padding:0.75em;">
-          <button class="btn rounded-pill btn-primary shadow btn-b" style="padding-left: 1.5em;padding-right: 1.5em;">
-            <h5>READ MORE</h5>
-          </button>
-        </div>
-      </a></article>
-      <div class="row">
-      <article class="tile is-child container shadow rende pad shadow fore" style="padding-top: 1em;padding:2em;">
-        <a href="{{ third.url }}" style="color: inherit;text-decoration: none;">
-        <h2 class="title is-spaced">
-          {{ third.title }}
-        </h2>
-        <h5 class="bold">
-          {{ third.dated }}
-        </h5>
-        <p>
-          {{ third.excerpt}}
-        </p>
-        <div style="width: 100%; text-align:center;padding:0.75em;">
-          <button class="btn rounded-pill btn-primary shadow btn-b" style="padding-left: 1.5em;padding-right: 1.5em;">
-            <h5>READ MORE</h5>
-          </button>
-        </div>
-      </a></article>
-      <article class="tile is-child container shadow rende pad shadow fore" style="padding-top: 1em;padding:2em;">
-        <a href="{{ third.url }}" style="color: inherit;text-decoration: none;">
-        <h2 class="title is-spaced">
-          {{ fourth.title }}
-        </h2>
-        <h5 class="bold">
-          {{ fourth.dated }}
-        </h5>
-        <p>
-          {{ fourth.excerpt}}
-        </p>
-        <div style="width: 100%; text-align:center;padding:0.75em;">
-          <button class="btn rounded-pill btn-primary shadow btn-b" style="padding-left: 1.5em;padding-right: 1.5em;">
-            <h5>READ MORE</h5>
-          </button>
-        </div>
-      </a></article>
-    </div>
-    </div>
-</div> -->
 
 <div class="h-10">
   <div class="row justify-content-center">
-    <article class="col-md is-child bg-lightest container shadow rende pad shadow fore mar" style="padding-top: 1em;padding:2em;">
-      <a href="{{ third.url }}" style="color: inherit;text-decoration: none;">
+    <article class="col-md is-child bg-primary tx-white container shadow rende pad shadow fore mar" style="padding-top: 1em;padding:2em;">
+      <a href="{{ first.url }}" style="color: inherit;text-decoration: none;">
       <h2 class="title is-spaced">
         {{ first.title }}
       </h2>
@@ -106,12 +24,12 @@ title: Home
       </p>
       <div style="width: 100%; text-align:center;padding:0.75em;">
         <button class="btn rounded-pill btn-light shadow btn-b" style="padding-left: 1.5em;padding-right: 1.5em;">
-          <h5>READ MORE</h5>
+          <h6>READ MORE</h6>
         </button>
       </div>
     </a></article>
     <article class="col-md is-child container shadow rende pad shadow fore mar" style="padding-top: 1em;padding:2em;">
-      <a href="{{ third.url }}" style="color: inherit;text-decoration: none;">
+      <a href="{{ second.url }}" style="color: inherit;text-decoration: none;">
       <h2 class="title is-spaced">
         {{ second.title }}
       </h2>
@@ -122,54 +40,16 @@ title: Home
         {{ second.excerpt}}
       </p>
       <div style="width: 100%; text-align:center;padding:0.75em;">
-        <button class="btn rounded-pill btn-primary shadow btn-b" style="padding-left: 1.5em;padding-right: 1.5em;">
-          <h5>READ MORE</h5>
+        <button class="btn rounded-pill btn-light shadow btn-b" style="padding-left: 1.5em;padding-right: 1.5em;">
+          <h6>READ MORE</h6>
         </button>
       </div>
     </a></article>
   </div>
-  <div class="row justify-content-center">
-    <article class="col-md is-child container shadow rende pad shadow fore mar" style="padding-top: 1em;padding:2em;">
-      <a href="{{ third.url }}" style="color: inherit;text-decoration: none;">
-      <h2 class="title is-spaced">
-        {{ third.title }}
-      </h2>
-      <h5 class="bold">
-        {{ third.dated }}
-      </h5>
-      <p>
-        {{ third.excerpt}}
-      </p>
-      <div style="width: 100%; text-align:center;padding:0.75em;">
-        <button class="btn rounded-pill btn-primary shadow btn-b" style="padding-left: 1.5em;padding-right: 1.5em;">
-          <h5>READ MORE</h5>
-        </button>
-      </div>
-    </a></article>
-    <article class="col-md is-child container shadow rende pad shadow fore mar" style="padding-top: 1em;padding:2em;">
-      <a href="{{ third.url }}" style="color: inherit;text-decoration: none;">
-      <h2 class="title is-spaced">
-        {{ fourth.title }}
-      </h2>
-      <h5 class="bold">
-        {{ fourth.dated }}
-      </h5>
-      <p>
-        {{ fourth.excerpt}}
-      </p>
-      <div style="width: 100%; text-align:center;padding:0.75em;">
-        <button class="btn rounded-pill btn-primary shadow btn-b" style="padding-left: 1.5em;padding-right: 1.5em;">
-          <h5>READ MORE</h5>
-        </button>
-      </div>
-    </a></article>
-  </div>
-</div>
 
 
-<!-- <h4 class="subtitle serif tx-blacker" style="padding-left: 1rem;color:rgb(53, 53, 53);font-weight: bold;">work</h4> -->
-<!-- <h5 style="padding-left: 1em;font-weight: 400;">a few apps I made.</h5> -->
-<!-- <div class="row" style="padding: 1em;">
+<h4 class="subtitle serif tx-blacker" style="padding-left: 1rem;color:rgb(53, 53, 53);font-weight: bold;margin-top:1em;">work</h4>
+<div class="row" style="padding: 1em;"> 
 
 
   <div class="col col-md-4 pad" style="padding:1em;">
@@ -178,8 +58,8 @@ title: Home
       <p>
         Make and take great lessons. Available on the App Store.
       </p>
-      <button class="btn rounded-pill btn-primary btn-b" style="padding-left: 1.5em;padding-right: 1.5em;padding-bottom: 0.65em;;">
-        <a href="bit.do/lessonity" style="text-decoration: none;color:inherit;font-weight: bold;" class="h5 serif">APP STORE</a>
+      <button class="btn rounded-pill btn-light btn-b shadow" style="padding-left: 1.5em;padding-right: 1.5em;padding-bottom: 0.65em;;">
+        <a href="bit.do/lessonity" style="text-decoration: none;color:inherit;font-weight: bold;" class="h6 serif">APP STORE</a>
       </button>
     </article>
   </div>
@@ -191,8 +71,8 @@ title: Home
       <p>
         Surveys, now easier than ever. Available on the App Store.
       </p>
-      <button class="btn rounded-pill btn-primary btn-b" style="padding-left: 1.5em;padding-right: 1.5em;padding-bottom: 0.65em;;">
-        <a href="bit.do/surveyer" style="text-decoration: none;color:inherit;font-weight: bold;" class="h5 serif">APP STORE</a>
+      <button class="btn rounded-pill btn-light btn-b shadow" style="padding-left: 1.5em;padding-right: 1.5em;padding-bottom: 0.65em;;">
+        <a href="bit.do/surveyer" style="text-decoration: none;color:inherit;font-weight: bold;" class="h6 serif">APP STORE</a>
       </button>
     </article>
   </div>
@@ -204,11 +84,11 @@ title: Home
       <p>
         Code snippets, now easier. Available on the App Store.
       </p>
-      <button class="btn rounded-pill btn-primary btn-b" style="padding-left: 1.5em;padding-right: 1.5em;padding-bottom: 0.65em;;">
-        <a href="bit.do/codetome" style="text-decoration: none;color:inherit;font-weight: bold;" class="h5 serif">APP STORE</a>
+      <button class="btn rounded-pill btn-light btn-b shadow" style="padding-left: 1.5em;padding-right: 1.5em;padding-bottom: 0.65em;;">
+        <a href="bit.do/codetome" style="text-decoration: none;color:inherit;font-weight: bold;" class="h6 serif">APP STORE</a>
       </button>
     </article>
-  </div> -->
+  </div>
 
 
 </div>

@@ -18,6 +18,7 @@ $blacker: #111111;
 $whiter: #f5f5f5;
 $forer: #111111;
 $bluer: #89c2ff;
+$white: white;
 
 h1, h2, h3, h4, h5, h6, .title {
     font-family: $font-header;
@@ -93,6 +94,7 @@ p{
 .bg-whiter {
     background-color: $whiter;
 }
+.bg-white { background-color: $white; }
 
 // tx
 .tx-lightest {
@@ -116,6 +118,10 @@ p{
 .tx-whiter {
     color: $whiter;
 }
+.tx-white { color: $white; }
+
+
+
 .shadow {
     box-shadow: 5px 10px 15px #bbbbbb;
 }
@@ -129,4 +135,11 @@ p{
 
 .mar {
     margin:1em;
+}
+
+.bottomer {
+    display: inline-block;
+    height: 100%;
+    vertical-align: bottom;
+    width: 0px;
 }
