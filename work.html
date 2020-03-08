@@ -1,0 +1,63 @@
+---
+layout: default
+title: Work
+permalink: /work/
+---
+
+{% assign work = site.work_items %}
+
+<div class="container">
+
+    <h4>{{ site.page_content.work_description }}</h4>
+
+    {% assign first = work[0] %}
+
+    <div class="row justify-content-center">
+        <article class="col-md-11 is-child bg-primarya tx-white container shadow rende pad shadow fore mar" style="padding-top: 1em;padding:2em;">
+          <a href="{{ first.url }}" style="color: inherit;text-decoration: none;">
+              <h5>
+                  LATEST
+              </h5>
+          <h2 class="title is-spaced">
+            {{ first.title }}
+          </h2>
+          <h5 class="bold">
+            {{ first.dated }}
+          </h5>
+          <p>
+            {{ first.excerpt}}
+          </p>
+          <div style="width: 100%; text-align:center;padding:0.75em;">
+            <button class="btn rounded-pill btn-light shadow btn-b" style="padding-left: 1.5em;padding-right: 1.5em;">
+              <h6>READ MORE</h6>
+          </button>
+          </div>
+        </a></article>
+      </div>
+
+</div>
+
+<div class="row justify-content-center">
+
+    {% for item in work offset:1 %}
+
+    <article class="col-md-5 is-child container shadow rende pad shadow fore mar" style="padding-top: 1em;padding:2em;">
+        <a href="{{ item.url }}" style="color: inherit;text-decoration: none;">
+        <h2 class="title is-spaced">
+        {{ item.title }}
+        </h2>
+        <h5>
+            <span style="font-weight:lighter">PLATFORMS </span><span style="font-weight: bolder;">{{ item.platforms }}</span>
+        </h5>
+        <p>
+        {{ item.excerpt}}
+        </p>
+        <div style="width: 100%; text-align:center;padding:0.75em;">
+        <button class="btn rounded-pill btn-light shadow btn-b" style="padding-left: 1.5em;padding-right: 1.5em;">
+            <h6>READ MORE</h6>
+        </button>
+        </div>
+    </a></article>
+
+    {% endfor %}
+</div>

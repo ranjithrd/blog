@@ -20,15 +20,16 @@
 </head>
 <body>
     {% include blog_header.html %}
-    <div class="content sans">
+    <div class="content sans" style="text-align: center;">
         <div class=" row justify-content-center">
             <div class="col-md-10">
                 <h1>{{ page.title }}</h1>
-                <h5>{{ page.dated }}</h5>
+                <h3 class="sans">{{ page.sub }}</h3>
                 {{ content }}
-                <h6>WRITTEN BY</h6>
-                <h4 class="sans" style="font-weight: 400;">Ranjith RD</h4>
-                <a href="{{site.url}}/blog/" style="text-decoration: none;color: inherit;"><h5>BACK TO BLOG</h5></a>
+                <button class="btn rounded-pill btn-primary btn-b shadow" style="padding-left: 1.5em;padding-right: 1.5em;padding-bottom: 0.65em;margin-bottom: 2em;;">
+                    <a href="{{ item.link }}" style="text-decoration: none;color:inherit;font-weight: bold;" class="h6 serif">WEBSITE</a>
+                </button>
+                <a href="{{site.url}}/work/" style="text-decoration: none;color: inherit;"><h5>BACK TO WORK</h5></a>
             </div>
         </div>
     </div>

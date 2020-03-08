@@ -51,44 +51,23 @@ title: Home
 <h4 class="subtitle serif tx-blacker" style="padding-left: 1rem;color:rgb(53, 53, 53);font-weight: bold;margin-top:1em;">work</h4>
 <div class="row" style="padding: 1em;"> 
 
+  {% for item in site.work_items limit:3 %}
 
   <div class="col col-md-4 pad" style="padding:1em;">
     <article class="pad rende shadow" style="padding:2em;">
-      <h1>Lessonity</h1>
+      <h1>{{ item.title }}</h1>
+      <h5 class="bold">
+        {{ item.platforms }}
+      </h5>
       <p>
-        Make and take great lessons. Available on the App Store.
+        {{ item.excerpt }}
       </p>
       <button class="btn rounded-pill btn-light btn-b shadow" style="padding-left: 1.5em;padding-right: 1.5em;padding-bottom: 0.65em;;">
-        <a href="bit.do/lessonity" style="text-decoration: none;color:inherit;font-weight: bold;" class="h6 serif">APP STORE</a>
+        <a href="{{ item.url }}" style="text-decoration: none;color:inherit;font-weight: bold;" class="h6 serif">APP STORE</a>
       </button>
     </article>
   </div>
 
-
-  <div class="col col-md-4 pad" style="padding:1em;">
-    <article class="pad rende shadow" style="padding:2em;">
-      <h1>Surveyer</h1>
-      <p>
-        Surveys, now easier than ever. Available on the App Store.
-      </p>
-      <button class="btn rounded-pill btn-light btn-b shadow" style="padding-left: 1.5em;padding-right: 1.5em;padding-bottom: 0.65em;;">
-        <a href="bit.do/surveyer" style="text-decoration: none;color:inherit;font-weight: bold;" class="h6 serif">APP STORE</a>
-      </button>
-    </article>
-  </div>
-
-
-  <div class="col col-md-4 pad" style="padding:1em;">
-    <article class="pad rende shadow" style="padding:2em;">
-      <h1>Codetome</h1>
-      <p>
-        Code snippets, now easier. Available on the App Store.
-      </p>
-      <button class="btn rounded-pill btn-light btn-b shadow" style="padding-left: 1.5em;padding-right: 1.5em;padding-bottom: 0.65em;;">
-        <a href="bit.do/codetome" style="text-decoration: none;color:inherit;font-weight: bold;" class="h6 serif">APP STORE</a>
-      </button>
-    </article>
-  </div>
-
+  {% endfor %}
 
 </div>

@@ -35,6 +35,11 @@ defaults:
       path: "gallery"
     values:
       image: true
+
+collections: 
+  page_content:
+  work_items:
+    output: true
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.

@@ -7,10 +7,18 @@ permalink: /blog/
 {% assign first = site.posts.first %}
 
 
+    <div class="container">
 
+        <h1>{{ site.page_content[2].blog_name }}</h1>
+        <h4>{{ site.page_content.home.blog_description }}</h4>
+
+    </div>
     <div class="row justify-content-center">
       <article class="col-md-11 is-child bg-primarya tx-white container shadow rende pad shadow fore mar" style="padding-top: 1em;padding:2em;">
         <a href="{{ first.url }}" style="color: inherit;text-decoration: none;">
+            <h3>
+                LATEST
+            </h3>
         <h2 class="title is-spaced">
           {{ first.title }}
         </h2>
