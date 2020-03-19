@@ -29,9 +29,15 @@
                 <h6>WRITTEN BY</h6>
                 <h4 class="sans" style="font-weight: 400;">Ranjith RD</h4>
                 <a href="{{site.url}}/blog/" style="text-decoration: none;color: inherit;"><h5>BACK TO BLOG</h5></a>
-              {% if site.disqus.shortname %}
-    {% include disqus_comments.html %}
-{% endif %}
+             <div id="hyvor-talk-view"></div>
+<script type="text/javascript">
+    var HYVOR_TALK_WEBSITE = 313; // DO NOT CHANGE THIS
+    var HYVOR_TALK_CONFIG = {
+        url: '{{ page.url | absolute_url }}',
+        id: '{{page.id}}'
+    };
+</script>
+<script async type="text/javascript" src="//talk.hyvor.com/web-api/embed"></script>
             </div>
         </div>
     </div>
